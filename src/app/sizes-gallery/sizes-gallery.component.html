@@ -1,7 +1,7 @@
 <div class="form-group">
-  <label for="unit">サイズ単位選択</label>
+  <label for="unit" class="mainfont">サイズ単位選択</label>
   <select name="unit" id="unit" class="form-control" [(ngModel)]="selectedUnit" (change)="setSelectedSizes()">
-    <option *ngFor="let unit of units">{{unit}}</option>
+    <option class="mainfont" *ngFor="let unit of units">{{unit}}</option>
   </select>
 </div>
 
@@ -11,7 +11,7 @@
     <div class="my-flex-container">
       <div *ngFor="let size of selectedSizes" class="flex-item">
         <span class="char" [style.fontSize]="size.toString() + unit">{{size}}</span>
-        <span class="unit">  {{unit}}</span>
+        <span class="unit mainfont">  {{unit}}</span>
         <div class="gallery-display">
         </div>
       </div>

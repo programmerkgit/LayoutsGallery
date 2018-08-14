@@ -1,7 +1,7 @@
 <div class="form-group">
-  <label for="hue">色相選択</label>
+  <label class="mainfont" for="hue">色相選択</label>
   <select name="hue" id="hue" class="form-control" [(ngModel)]="selectedHue" (change)="setSelectedColors()">
-    <option *ngFor="let hue of hues">{{hue}}</option>
+    <option class="mainfont" *ngFor="let hue of hues">{{hue}}</option>
   </select>
 </div>
 
@@ -10,7 +10,7 @@
   <div *ngIf="selectedHue === hue">
     <div class="my-flex-container">
       <div *ngFor="let color of selectedColors" class="flex-item" [style.color]="color">
-        <span class="char">{{color}}</span>
+        <span class="char mainfont">{{color}}</span>
         <div class="gallery-display">
         </div>
       </div>

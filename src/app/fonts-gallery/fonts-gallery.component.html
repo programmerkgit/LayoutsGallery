@@ -1,10 +1,9 @@
 <div class="form-group">
-  <label for="font">フォント選択</label>
+  <label for="font" class="mainfont">フォント選択</label>
   <select name="font" id="font" class="form-control" [(ngModel)]="selectedKey" (change)="setSelectedFonts()">
-    <option *ngFor="let key of fontKeys">{{key}}</option>
+    <option class="mainfont" *ngFor="let key of fontKeys">{{key}}</option>
   </select>
 </div>
-
 
 <div *ngFor="let fontKey of fontKeys">
   <div *ngIf="selectedKey === fontKey">
