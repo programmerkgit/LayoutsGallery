@@ -1,0 +1,20 @@
+<div class="form-group">
+  <label for="font">フォント選択</label>
+  <select name="font" id="font" class="form-control" [(ngModel)]="selectedKey" (change)="setSelectedFonts()">
+    <option *ngFor="let key of fontKeys">{{key}}</option>
+  </select>
+</div>
+
+
+<div *ngFor="let fontKey of fontKeys">
+  <div *ngIf="selectedKey === fontKey">
+    <div class="my-flex-container">
+      <div *ngFor="let font of selectedFonts" class="flex-item" [style.fontFamily]="font">
+        <span class="char">{{font}}</span>
+        <div class="gallery-display">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

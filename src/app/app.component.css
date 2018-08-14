@@ -1,0 +1,12 @@
+.gallery-header {
+  padding: 60px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+
+
+.big {
+  font-size: 3.5em;
+}
