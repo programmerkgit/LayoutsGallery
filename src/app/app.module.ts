@@ -4,9 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FontsGalleryComponent } from './fonts-gallery/fonts-gallery.component';
 import {FormsModule} from '@angular/forms';
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { SizesGalleryComponent } from './sizes-gallery/sizes-gallery.component';
 import { ColorsGalleryComponent } from './colors-gallery/colors-gallery.component';
+import { GalleryDisplayModule } from './gallery-display/gallery-display.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ColorsGalleryComponent } from './colors-gallery/colors-gallery.componen
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GalleryDisplayModule
   ],
   providers: [],
   bootstrap: [AppComponent]

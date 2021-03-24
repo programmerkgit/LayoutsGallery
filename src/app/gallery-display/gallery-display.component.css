@@ -1,0 +1,26 @@
+.display-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.char {
+  position: relative;
+  top: -5px;
+  z-index: 2;
+}
+
+.display {
+  position: absolute;
+  z-index: 0;
+  margin: 10px;
+  height: 180px;
+  width: 180px;
+  display: inline-block;
+  background-color: rgb(255 255 190);
+  opacity: 0.8;
+  border-radius: 50%;
+  filter: blur(10px);
+  transform: rotateX(65deg) skewX(-5deg);
+}

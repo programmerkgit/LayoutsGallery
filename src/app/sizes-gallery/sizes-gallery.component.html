@@ -10,9 +10,8 @@
   <div *ngIf="selectedUnit === unit">
     <div class="my-flex-container">
       <div *ngFor="let size of selectedSizes" class="flex-item">
-        <span class="char" [style.fontSize]="size.toString() + unit">{{size}}</span>
-        <span class="unit mainfont">  {{unit}}</span>
-        <div class="gallery-display">
+        <div [style.fontSize]="size.toString() + unit">
+          <app-gallery-display [text]="size + selectedUnit"></app-gallery-display>
         </div>
       </div>
     </div>

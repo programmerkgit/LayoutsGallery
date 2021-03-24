@@ -10,9 +10,7 @@
   <div *ngIf="selectedHue === hue">
     <div class="my-flex-container">
       <div *ngFor="let color of selectedColors" class="flex-item" [style.color]="color">
-        <span class="char mainfont">{{color}}</span>
-        <div class="gallery-display">
-        </div>
+        <app-gallery-display [text]="color"></app-gallery-display>
       </div>
     </div>
   </div>

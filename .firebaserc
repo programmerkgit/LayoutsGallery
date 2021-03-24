@@ -1,5 +1,14 @@
 {
   "projects": {
     "production": "layout-gallery"
+  },
+  "targets": {
+    "layout-gallery-9fc62": {
+      "hosting": {
+        "LayoutsGallery": [
+          "layout-gallery-9fc62"
+        ]
+      }
+    }
   }
 }
